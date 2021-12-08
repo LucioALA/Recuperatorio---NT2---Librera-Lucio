@@ -1,0 +1,28 @@
+
+<section class="src-componentes-front">
+ 
+    <h2>Conversion a dolar</h2>
+    <vue-form  >
+      <h3>Pesos</h3>
+    <input 
+          type="number"
+          id="pesos"
+          v-model="formData.pesos"
+          name="pesos"
+          required 
+        />
+        <h3>Dolar</h3>
+        <input 
+          type="number"
+          id="dolar"
+          v-model="formData.dolar"
+          name="dolar"
+          required 
+        />
+    <td>{{ formData.pesos/formData.dolar }}$</td>
+    
+  </vue-form>
+  <p>respuestas: 1:c 2:b 3:c 4:a,d 5:a,b,c</p>
+ 
+</section>
+
